@@ -1,0 +1,31 @@
+{
+  "packageId": "com.guri1antelope.keibav2",
+  "host": "guri1antelope.github.io",
+  "name": "ドット競馬クロニクル AI予想室",
+  "launcherName": "ドット競馬",
+  "themeColor": "#121318",
+  "navigationColor": "#121318",
+  "backgroundColor": "#121318",
+  "enableNotifications": false,
+  "startUrl": "/keiba-v2-web/",
+  "iconUrl": "https://guri1antelope.github.io/keiba-v2-web/icon-512.png",
+  "maskableIconUrl": "https://guri1antelope.github.io/keiba-v2-web/icon-512.png",
+  "appVersionCode": 1,
+  "appVersionName": "1.0.0",
+  "shortcuts": [],
+  "webManifestUrl": "https://guri1antelope.github.io/keiba-v2-web/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": false,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "orientation": "portrait",
+  "signingKey": {
+    "path": "./android.keystore",
+    "alias": "android"
+  },
+  "appVersion": "1.0.0"
+}

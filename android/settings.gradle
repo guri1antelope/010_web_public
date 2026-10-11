@@ -1,0 +1,2 @@
+rootProject.name = "KeibaV2"
+include ':app'
