@@ -3,21 +3,37 @@ plugins {
 }
 
 android {
-    namespace 'com.guri1antelope.keibav2'
+    namespace 'jp.studio.dotkeiba'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.guri1antelope.keibav2"
+        applicationId "jp.studio.dotkeiba"
         minSdk 24
         targetSdk 34
         versionCode 1
         versionName "1.0.0"
     }
 
+    signingConfigs {
+        release {
+            def keystorePath = System.getenv("KEYSTORE_PATH")
+            if (keystorePath && file(keystorePath).exists()) {
+                storeFile file(keystorePath)
+                storePassword System.getenv("KEYSTORE_PASSWORD")
+                keyAlias System.getenv("KEY_ALIAS")
+                keyPassword System.getenv("KEY_PASSWORD")
+            }
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            def keystorePath = System.getenv("KEYSTORE_PATH")
+            if (keystorePath && file(keystorePath).exists()) {
+                signingConfig signingConfigs.release
+            }
         }
     }
 

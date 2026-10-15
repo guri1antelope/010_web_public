@@ -1,0 +1,19 @@
+# Android build outputs
+*.apk
+*.aab
+build/
+.gradle/
+android/.gradle/
+android/app/build/
+
+# Signing keys
+*.jks
+*.keystore
+*.p12
+keystore/
+signing/
+
+# Local logs
+*.log
+temp_log/
+apk_output/

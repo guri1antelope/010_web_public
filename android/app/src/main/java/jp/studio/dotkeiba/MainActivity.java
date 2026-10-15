@@ -1,4 +1,4 @@
-package com.guri1antelope.keibav2;
+package jp.studio.dotkeiba;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
